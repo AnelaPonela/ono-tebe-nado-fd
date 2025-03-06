@@ -1,13 +1,10 @@
 /* Хэдер*/
 .header {
-  padding: 0 50px;
-  height: 294px;
+  padding: 94px 50px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
 }
-
-
 
 .menu-list {
   display: flex;
@@ -18,18 +15,24 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
-  font-family: Raleway;
   text-decoration: none;
-}
-
-.menu-item {
-  list-style: circle;
   padding-right: 2px;
   border-bottom: 2px solid black;
 }
 
-.menu-item_active {
+.menu-item {
+  list-style: circle;
+}
+
+/* внизу правило, чтобы убрать для первого пункта кружочек слева */
+
+.menu-item_no-bullit {
   list-style: none;
+}
+
+/* внизу правило, которое убирает для интерактивного элемента подчеркивание*/
+
+.menu-link_active {
   border-bottom: none;
 }
 
@@ -39,7 +42,6 @@
 
 .header__logo-image {
   width: 135px;
-
 }
 
 .address {
@@ -48,12 +50,15 @@
   line-height: 1.35;
   font-style: normal;
   max-width: 240px;
-  justify-self: self-end;
-  padding-right: 35px;
 }
 
 .address-link {
   text-underline-offset: 4px;
+}
+
+.header__address {
+  justify-self: end;
+  padding-right: 35px;
 }
 
 /* Секция обложка "ОНО ТЕБЕ НАДО" */
@@ -67,7 +72,7 @@
   margin-bottom: 180px;
   color: white;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 
 .overlay {
@@ -106,7 +111,6 @@
 .description {
   display: flex;
   justify-content: space-between;
-  height: 51px;
   align-items: center;
 }
 
@@ -123,16 +127,15 @@
   line-height: 1.2;
   background: transparent;
   color: white;
-  width: 256px;
-  height: 100%;
+  min-width: 256px;
   border: 1px solid white;
+  padding: 11px 0;
 }
 
 /* Секция ЛОТЫ*/
 
 .lots {
   margin: 0 24px 120px;
-  height: 723px;
 }
 
 .lots__heading {
@@ -159,23 +162,14 @@
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .card-link {
@@ -190,7 +184,10 @@
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  z-index: -2;
+  z-index: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card__title {
@@ -219,7 +216,6 @@
 /*Секция об аукционе*/
 
 .about {
-  height: 595px;
   margin: 0 24px 182px;
   padding: 36px 0 0 0;
   display: grid;
@@ -253,7 +249,7 @@
 .about__title {
   grid-area: about__title;
   font-weight: 700;
-  font-size: 27px;
+  font-size: 40px;
   line-height: 1.2;
   text-transform: uppercase;
   display: flex;
@@ -268,27 +264,15 @@
 }
 
 .text-bottom_padding {
-  padding-bottom: 24px;
+  padding-bottom: 20px;
 }
 
 /* Футер */
 
 .footer {
-  height: 180px;
   padding: 0 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
-
-.footer__address {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.35;
-  font-style: normal;
-}
-
-.footer__address-link {
-  text-underline-offset: 4px;
 }
 
 .footer__menu {

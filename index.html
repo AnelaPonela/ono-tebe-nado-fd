@@ -13,8 +13,8 @@
     <header class="header">
       <nav class="menu">
         <ul class="menu-list">
-          <li class="menu-item menu-item_active">
-            <a href="#0" class="menu-link">главная</a>
+          <li class="menu-item menu-item_no-bullit">
+            <a href="#0" class="menu-link menu-link_active">главная</a>
           </li>
           <li class="menu-item">
             <a href="#0" class="menu-link">посмотреть лоты</a>
@@ -31,13 +31,14 @@
           class="header__logo-image"
         />
       </a>
-      <address class="address">
+      <address class="address header__address">
         <a href="tel:+99995555555" class="address-link">+9 999 555 5555</a>
         <br />
         <a href="mailto:info@sobaka.ge" class="address-link">info@sobaka.ge</a>
-        <br />
-        наб. Принсенграхт 263- <br />
-        265, Амстердам
+        <p>
+          наб. Принсенграхт 263- <br />
+          265, Амстердам
+        </p>
       </address>
     </header>
     <main>
@@ -58,7 +59,9 @@
           <p class="cover__description-text">
             АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ
           </p>
-          <button class="cover__bet-button">СДЕЛАТЬ СТАВКУ</button>
+          <button type="button" class="cover__bet-button">
+            СДЕЛАТЬ СТАВКУ
+          </button>
         </div>
       </section>
       <section class="lots">
@@ -73,7 +76,7 @@
                 </h3>
                 <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                  ставка, если бы вы не знали, что режиссёр — Пол Томас 
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
                 </p>
               </article>
@@ -126,7 +129,7 @@
             />
           </div>
         </div>
-        <div class="about__title"><h2>Об аукционе</h2></div>
+        <h2 class="about__title">Об аукционе</h2>
         <div class="about__text">
           <p class="text-bottom_padding">
             Здесь вы не встретите очередное пафосное собрание невероятно
@@ -147,21 +150,18 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="footer__address">
-        <a href="tel:+99995555555" class="footer__address-link"
-          >+9 999 555 5555</a
-        >
+      <address class="address">
+        <a href="tel:+99995555555" class="address-link">+9 999 555 5555</a>
         <br />
-        <a href="mailto:info@sobaka.ge" class="footer__address-link"
-          >info@sobaka.ge</a
-        >
-        <br />
-        наб. Принсенграхт 263-265, Амстердам
+        <a href="mailto:info@sobaka.ge" class="address-link">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
-            <a href="#0" class="footer__menu-link_active">главная</a>
+            <a href="#0" class="footer__menu-link footer__menu-link_active"
+              >главная</a
+            >
           </li>
           <li class="footer__menu-list-item">
             <a href="#0" class="footer__menu-link">посмотреть лоты</a>
